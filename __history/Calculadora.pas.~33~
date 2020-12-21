@@ -1,0 +1,139 @@
+unit Calculadora;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+
+type
+  TFrmCalculadora = class(TForm)
+    edtResultado: TEdit;
+    pnlCalculadora: TPanel;
+    btn1: TSpeedButton;
+    pnl1: TPanel;
+    pnl2: TPanel;
+    btn2: TSpeedButton;
+    pnl3: TPanel;
+    btn3: TSpeedButton;
+    pnl4: TPanel;
+    btn4: TSpeedButton;
+    pnl6: TPanel;
+    btn6: TSpeedButton;
+    pnl7: TPanel;
+    btn7: TSpeedButton;
+    pnl8: TPanel;
+    btn8: TSpeedButton;
+    pnl9: TPanel;
+    btn9: TSpeedButton;
+    pnl5: TPanel;
+    btn5: TSpeedButton;
+    pnlMais: TPanel;
+    btnMais: TSpeedButton;
+    pnlMenos: TPanel;
+    btnMenos: TSpeedButton;
+    pnlVezes: TPanel;
+    btnVezes: TSpeedButton;
+    pnlLimpar: TPanel;
+    btnLimpar: TSpeedButton;
+    pnl0: TPanel;
+    btn0: TSpeedButton;
+    pnlIgual: TPanel;
+    btnIgual: TSpeedButton;
+    pnlDividir: TPanel;
+    btnDividir: TSpeedButton;
+    procedure btnMaisClick(Sender: TObject);
+    procedure btnMenosClick(Sender: TObject);
+    procedure btnVezesClick(Sender: TObject);
+    procedure btnDividirClick(Sender: TObject);
+    procedure NumeroClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnIgualClick(Sender: TObject);
+  private
+    { Private declarations }
+    FOperacao : Char; //saber qual operação
+    FTotal: Double;
+    FUltimoNumero: Double;
+
+    procedure Calcular;
+    procedure Limpar;
+
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCalculadora: TFrmCalculadora;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmCalculadora.btnDividirClick(Sender: TObject);
+begin
+  Calcular;
+  FOperacao := '/';
+end;
+
+procedure TFrmCalculadora.btnIgualClick(Sender: TObject);
+begin
+  Calcular;
+end;
+
+procedure TFrmCalculadora.btnLimparClick(Sender: TObject);
+begin
+  Limpar;
+end;
+
+procedure TFrmCalculadora.btnMaisClick(Sender: TObject);
+begin
+  Calcular;
+  FOperacao := '+';
+end;
+
+procedure TFrmCalculadora.btnMenosClick(Sender: TObject);
+begin
+  Calcular;
+  FOperacao := '-';
+end;
+
+procedure TFrmCalculadora.btnVezesClick(Sender: TObject);
+begin
+  Calcular;
+  FOperacao := '*';
+end;
+
+procedure TFrmCalculadora.Calcular;
+begin
+  case FOperacao of
+    '+' : FTotal := FTotal + StrToFloat(edtResultado.Text);
+    '-' : begin
+            FTotal := FTotal - StrToFloat(edtResultado.Text);//exemplo mais de uma linha
+          end;
+    '*' : FTotal := FTotal * StrToFloat(edtResultado.Text);
+    '/' : FTotal := FTotal / StrToFloat(edtResultado.Text);
+  end;
+
+  edtResultado.Text := FloatToStr(FTotal);
+
+  FUltimoNumero := 0;
+end;
+
+procedure TFrmCalculadora.Limpar;
+begin
+  FUltimoNumero := 0;
+  edtResultado.Text := '0';
+  FOperacao := '+';
+end;
+
+procedure TFrmCalculadora.NumeroClick(Sender: TObject);//Sender: objeto q tras qual botão enviou sinal onClick
+begin
+  if FUltimoNumero = 0 then//Retira o 0 no primeiro input
+    edtResultado.Text := TButton(Sender).Caption
+  else
+    edtResultado.Text := edtResultado.Text + TButton(Sender).Caption;
+
+  FUltimoNumero := StrToFloat(edtResultado.Text);//Converte string para float
+end;
+
+end.

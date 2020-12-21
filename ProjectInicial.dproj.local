@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/19 13:14:56.000.984,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/19 13:19:37.000.329,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Calculadora\Inicial.pas=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/19 13:19:37.000.329,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Calculadora\Inicial.dfm=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/12/19 20:32:54.000.757,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Calculadora\ProjectInicial.dproj=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/12/20 18:52:24.397,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\BatUtilidades\Unit2.pas</Transaction>
+    <Transaction>2020/12/20 18:53:31.717,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\BatUtilidades\Calculadora.dfm=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\BatUtilidades\Unit2.dfm</Transaction>
+    <Transaction>2020/12/20 18:53:31.717,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\BatUtilidades\Calculadora.pas=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\BatUtilidades\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

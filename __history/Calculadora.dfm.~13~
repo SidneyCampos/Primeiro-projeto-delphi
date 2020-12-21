@@ -1,0 +1,448 @@
+object FrmCalculadora: TFrmCalculadora
+  Left = 0
+  Top = 0
+  Caption = 'Calculadora'
+  ClientHeight = 346
+  ClientWidth = 360
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlCalculadora: TPanel
+    Left = 0
+    Top = 0
+    Width = 361
+    Height = 337
+    BevelOuter = bvNone
+    Color = clGradientInactiveCaption
+    ParentBackground = False
+    TabOrder = 0
+    DesignSize = (
+      361
+      337)
+    object edtResultado: TEdit
+      Left = 8
+      Top = 8
+      Width = 345
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -43
+      Font.Name = 'Roboto'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      Text = '0'
+    end
+    object pnl1: TPanel
+      Left = 8
+      Top = 88
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 1
+      object btn1: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '1'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl2: TPanel
+      Left = 80
+      Top = 88
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 2
+      object btn2: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '2'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl3: TPanel
+      Left = 152
+      Top = 88
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 3
+      object btn3: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '3'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl4: TPanel
+      Left = 8
+      Top = 151
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 4
+      object btn4: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '4'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl6: TPanel
+      Left = 152
+      Top = 151
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 5
+      object btn6: TSpeedButton
+        Left = 1
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '6'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl7: TPanel
+      Left = 8
+      Top = 214
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 6
+      object btn7: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '7'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl8: TPanel
+      Left = 80
+      Top = 214
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 7
+      object btn8: TSpeedButton
+        Left = -1
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '8'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl9: TPanel
+      Left = 152
+      Top = 214
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 8
+      object btn9: TSpeedButton
+        Left = -1
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '9'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl5: TPanel
+      Left = 79
+      Top = 151
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 9
+      object btn5: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '5'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnlMais: TPanel
+      Left = 232
+      Top = 88
+      Width = 121
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 10
+      object btnMais: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 121
+        Height = 57
+        Caption = '+'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+        OnClick = btnMaisClick
+      end
+    end
+    object pnlMenos: TPanel
+      Left = 232
+      Top = 151
+      Width = 121
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 11
+      object btnMenos: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 121
+        Height = 57
+        Caption = '-'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnlVezes: TPanel
+      Left = 232
+      Top = 214
+      Width = 121
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 12
+      object btnVezes: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 121
+        Height = 57
+        Caption = 'x'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnlLimpar: TPanel
+      Left = 8
+      Top = 277
+      Width = 128
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 13
+      object btnLimpar: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 129
+        Height = 57
+        Caption = 'CE'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnl0: TPanel
+      Left = 152
+      Top = 277
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 14
+      object btn0: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '0'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnlIgual: TPanel
+      Left = 296
+      Top = 277
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 15
+      object btnIgual: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '='
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+    object pnlDividir: TPanel
+      Left = 233
+      Top = 277
+      Width = 57
+      Height = 57
+      Anchors = [akLeft, akTop, akRight]
+      BevelOuter = bvNone
+      Color = clGradientActiveCaption
+      ParentBackground = False
+      TabOrder = 16
+      object btnDividir: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 57
+        Height = 57
+        Caption = '/'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -32
+        Font.Name = 'Roboto'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+  end
+end

@@ -1,0 +1,37 @@
+unit Editor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdActns, System.Actions,
+  Vcl.ActnList, Vcl.ToolWin, Vcl.ComCtrls, Vcl.StdCtrls, System.ImageList,
+  Vcl.ImgList;
+
+type
+  TFrmEditor = class(TForm)
+    MainMenu1: TMainMenu;
+    ActionList1: TActionList;
+    ImageList1: TImageList;
+    RichEdit1: TRichEdit;
+    ToolBar1: TToolBar;
+    FileOpen1: TFileOpen;
+    FileExit1: TFileExit;
+    Arquivo1: TMenuItem;
+    Open1: TMenuItem;
+    N1: TMenuItem;
+    Exit1: TMenuItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmEditor: TFrmEditor;
+
+implementation
+
+{$R *.dfm}
+
+end.
